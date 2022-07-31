@@ -14,6 +14,12 @@ def index():
 ####################### Register API #####################################
 ##########################################################################
 
+################## Prediction of House Price ######################
+@app.route('/eda', methods=['GET', 'POST'])
+def eda():
+    print('EDA')
+    return render_template("home.html")
+
 @app.route('/register',methods = ['POST'])
 def register():
     print("Testing Login API")
